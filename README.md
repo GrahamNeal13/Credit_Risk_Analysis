@@ -20,7 +20,6 @@ Below are the models that were used with the credit card dataset from the Lendin
   - ![naive_random_oversamp_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/naive_random_oversamp_accuracy.png)
   - ![naive_random_oversamp_class.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/naive_random_oversamp_class.png)
 
-
 - SMOTE Oversampling, new instances are interpolated, that is for an instance from the minority class, a number of its closest neighbors are chosen.  Based on the values of these neighbors, new values are created.  
   - ![smote_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smote_accuracy.png)
   - ![smote_classification.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smote_classification.png)
@@ -30,5 +29,22 @@ Below are the models that were used with the credit card dataset from the Lendin
 - ClusterCentroids Undersampling, the algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representatives of the clusters.  The majority class is then undersampled down to the size of the minority class.  
   - ![clustercent_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/clustercent_accuracy.png)
   - ![clustercent_class.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/clustercent_class.png)
+
+### Combination (over and under) Sampling:
+
+- SMOTEENN,
+  - ![smoteenn_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_accuracy.png)
+  - ![smoteenn_class.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_class.png)
+
+### Ensemble Learners:
+
+- Balanced Random Forest Classifier,
+  - ![balanced_random_forest_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/balanced_random_forest_accuracy.png)
+  - ![balanced_random_forest_class_report.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/balanced_random_forest_class_report.png)
+
+- Easy Ensemble Adaboost Classifier, 
+  - ![eec_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/eec_accuracy.png)
+  - ![eec_class_report.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/eec_class_report.png)
+
 
 
