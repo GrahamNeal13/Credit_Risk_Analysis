@@ -45,13 +45,13 @@ Below are the models that were used with the credit card dataset from the Lendin
 ### Ensemble Learners:
 
 - Balanced Random Forest Classifier, takes parameters like n_estimators, will allow us to set the number of trees that will be created by the algorithm.  Generally, the higher number makes the predictions stronger and more stable, but can slow down the output becuase of the higher traingin time allocated.  
-- The accuracy score is 0.91 while the precision score for high risk is 0.04 and the low risk is 1.00.  The recall score is 0.67 for high risk and low risk showed 0.91.  
-  - ![balanced_random_forest_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/balanced_random_forest_accuracy.png)
+- The accuracy score is 0.79 while the precision score for high risk is 0.04 and the low risk is 1.00.  The recall score is 0.67 for high risk and low risk showed 0.91.  
+  - ![Bal_rando_acc2.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/Bal_rando_acc2.png)
   - ![balanced_random_forest_class_report.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/balanced_random_forest_class_report.png)
 
 - Easy Ensemble Adaboost Classifier, this method trains a model then evaluates it.  After another model is trained with the first models errors weighted.  This time, the model gives extra weight to the errors from the previous model.  The purpose of this weighting is to minimize similar errors in subsequent models.  This process is repeated until the error rate is minimized. 
-- The accuracy score of the Easy Ensemble Adaboost Classifier model is 0.94, the highest of all the models so far.  The precision score for the high risk is 0.07 and the low risk is 1.00.  The recall scores are for high risk 0.91 and for low risk 0.94.  And the F1 score is 0.14 for high risk and 0.97 for the low risk.  
-  - ![eec_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/eec_accuracy.png)
+- The accuracy score of the Easy Ensemble Adaboost Classifier model is 0.93, the highest of all the models so far.  The precision score for the high risk is 0.07 and the low risk is 1.00.  The recall scores are for high risk 0.91 and for low risk 0.94.  And the F1 score is 0.14 for high risk and 0.97 for the low risk.  
+  - ![eec_accuracy2.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/eec_accuracy2.png)
   - ![eec_class_report.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/eec_class_report.png)
 
 
