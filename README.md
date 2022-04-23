@@ -29,18 +29,18 @@ Below are the models that were used with the credit card dataset from the Lendin
 ### Undersampling:
 
 - ClusterCentroids Undersampling, the algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representatives of the clusters.  The majority class is then undersampled down to the size of the minority class.  
-- The precison scores show high risk at 0.01 and low risk is 1.00 while the recall is 0.60 and 0.64 relatively speaking.  The F1 scores are also quite skewed with high risk at 0.02 and low risk at 0.78.  The overall accuracy score of 0.62.  
-  - ![clustercent_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/clustercent_accuracy.png)
-  - ![clustercent_class.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/clustercent_class.png)
+- The precison scores show high risk at 0.01 and low risk is 1.00 while the recall is 0.59 and 0.43 relatively speaking.  The F1 scores are also quite skewed with high risk at 0.01 and low risk at 0.60.  The overall accuracy score of 0.51.  
+  - ![cc_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/cc_accuracy.png)
+  - ![cc_classification.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/cc_classification.png)
 
 ### Combination (over and under) Sampling:
 
 - SMOTEENN, combines the SMOTE and the edited nearest neighbors algorithm.  This follows two steps-
     1. Oversample the minority class with SMOTE
     2. Clean the resulting data with an undersampling strategy.  If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.  
-- The accuracy score of the SMOTEENN is 0.62, the precision score is 0.60 for high risk and 0.64 for low risk.  The F1 score is 0.02 for high risk and 0.78 for low risk.  The recall for high risk is 0.60 and the low risk is 0.64.  
-  - ![smoteennor_accuracy.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_accuracy.png)
-  - ![smoteenn_class.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_class.png)
+- The accuracy score of the SMOTEENN is 0.64, the precision score is 0.01 for high risk and 1.00 for low risk.  The F1 score is 0.02 for high risk and 0.73 for low risk.  The recall for high risk is 0.70 and the low risk is 0.57.  
+  - ![smoteenn_accuracy2.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_accuracy2.png)
+  - ![smoteenn_class2.png](https://github.com/GrahamNeal13/Credit_Risk_Analysis/blob/main/resources/smoteenn_class2.png)
 
 ### Ensemble Learners:
 
